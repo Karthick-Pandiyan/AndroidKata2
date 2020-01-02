@@ -17,6 +17,11 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(1) != "Fizz")
     }
 
+    @Test
+    fun `Given convert function should return Fizz when we pass any value which is divisible by 3`(){
+        Assert.assertTrue(convert(3) == "Fizz")
+    }
+
     private fun convert(convertTOFizzBuss: Int): String {
 
         if (convertTOFizzBuss % 3 == 0)
