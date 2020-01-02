@@ -52,6 +52,14 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(52) == "Buzz")
     }
 
+    @Test
+    fun `Given convert function should return Fizz when any value which is divisible 3 or any value which has 3 in it`(){
+        // Value is divisible by 3
+        Assert.assertTrue(convert(18) == "Fizz")
+        // Value is not divisible by 3, but it has 3 in it
+        Assert.assertTrue(convert(31) == "Fizz")
+    }
+
     private fun convert(convertToFizzBuzz: Int): String {
 
         if(convertToFizzBuzz % (15) == 0)
