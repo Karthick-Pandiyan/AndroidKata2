@@ -48,7 +48,7 @@ class FizzBuzzTest {
 
         if(convertToFizzBuzz % (15) == 0)
             return "FizzBuzz"
-        if (convertToFizzBuzz % 5 == 0)
+        if (convertToFizzBuzz % 5 == 0 || convertToFizzBuzz.toString().contains("5"))
             return "Buzz"
         if (convertToFizzBuzz % 3 == 0)
             return "Fizz"
