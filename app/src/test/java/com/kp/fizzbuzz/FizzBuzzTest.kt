@@ -13,7 +13,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    fun `Given convert function should not return Fizz when 1 is passed to test`(){
+    fun `Given convert function should not return Fizz when any value passed which is not divisible by 3`(){
         Assert.assertTrue(convert(1) != "Fizz")
     }
 
