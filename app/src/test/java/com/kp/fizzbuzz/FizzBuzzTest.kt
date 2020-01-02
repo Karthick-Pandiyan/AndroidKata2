@@ -62,14 +62,12 @@ class FizzBuzzTest {
 
     private fun convert(convertToFizzBuzz: Int): String {
 
-        if(convertToFizzBuzz % (15) == 0)
-            return "FizzBuzz"
-        if (convertToFizzBuzz % 5 == 0 || has5InIt(convertToFizzBuzz))
-            return "Buzz"
-        if (convertToFizzBuzz % 3 == 0 || has3InIt(convertToFizzBuzz))
-            return "Fizz"
-
-        return convertToFizzBuzz.toString()
+        return when{
+            convertToFizzBuzz % 15 == 0 -> return "FizzBuzz"
+            convertToFizzBuzz % 5 == 0 || has5InIt(convertToFizzBuzz) -> return "Buzz"
+            convertToFizzBuzz % 3 == 0 || has3InIt(convertToFizzBuzz) -> return "Fizz"
+            else -> convertToFizzBuzz.toString()
+        }
     }
 
     private fun has3InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains("3")
