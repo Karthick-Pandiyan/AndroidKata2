@@ -33,6 +33,11 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(10) == "Buzz")
     }
 
+    @Test
+    fun `Given convert function should not return FizzBuzz when any value which is not divisible by 15`(){
+        Assert.assertFalse(convert(3) == "FizzBuzz")
+    }
+
     private fun convert(convertToFizzBuzz: Int): String {
 
         if(convertToFizzBuzz % (15) == 0)
