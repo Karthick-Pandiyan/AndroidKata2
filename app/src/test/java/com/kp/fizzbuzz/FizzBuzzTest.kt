@@ -58,11 +58,13 @@ class FizzBuzzTest {
             return "FizzBuzz"
         if (convertToFizzBuzz % 5 == 0 || has5InIt(convertToFizzBuzz))
             return "Buzz"
-        if (convertToFizzBuzz % 3 == 0 || convertToFizzBuzz.toString().contains("3"))
+        if (convertToFizzBuzz % 3 == 0 || has3InIt(convertToFizzBuzz))
             return "Fizz"
 
         return convertToFizzBuzz.toString()
     }
+
+    private fun has3InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains("3")
 
     private fun has5InIt(convertToFizzBuzz: Int) = convertToFizzBuzz.toString().contains("5")
 }
