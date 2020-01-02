@@ -24,6 +24,8 @@ class FizzBuzzTest {
 
     private fun convert(convertTOFizzBuss: Int): String {
 
+        if (convertTOFizzBuss % 5 == 0)
+            return "Buzz"
         if (convertTOFizzBuss % 3 == 0)
             return "Fizz"
 
