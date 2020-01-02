@@ -44,6 +44,14 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(45) == "FizzBuzz")
     }
 
+    @Test
+    fun `Given convert function should return Buzz when any value which is divisible 5 or any value which has 5 in it`(){
+        // Value is divisible by 5
+        Assert.assertTrue(convert(5) == "Buzz")
+        // Value is not divisible by 5, but it has 5 in it
+        Assert.assertTrue(convert(52) == "Buzz")
+    }
+
     private fun convert(convertToFizzBuzz: Int): String {
 
         if(convertToFizzBuzz % (15) == 0)
