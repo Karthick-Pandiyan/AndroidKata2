@@ -22,6 +22,11 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(3) == "Fizz")
     }
 
+    @Test
+    fun `Given convert function should not return Buzz when any value which is not divisible by 5`(){
+        Assert.assertFalse(convert(3) == "Buzz")
+    }
+
     private fun convert(convertTOFizzBuss: Int): String {
 
         if (convertTOFizzBuss % 5 == 0)
