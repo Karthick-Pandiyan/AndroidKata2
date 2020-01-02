@@ -33,15 +33,15 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(10) == "Buzz")
     }
 
-    private fun convert(convertTOFizzBuss: Int): String {
+    private fun convert(convertToFizzBuzz: Int): String {
 
-        if(convertTOFizzBuss % (15) == 0)
+        if(convertToFizzBuzz % (15) == 0)
             return "FizzBuzz"
-        if (convertTOFizzBuss % 5 == 0)
+        if (convertToFizzBuzz % 5 == 0)
             return "Buzz"
-        if (convertTOFizzBuss % 3 == 0)
+        if (convertToFizzBuzz % 3 == 0)
             return "Fizz"
 
-        return convertTOFizzBuss.toString()
+        return convertToFizzBuzz.toString()
     }
 }
