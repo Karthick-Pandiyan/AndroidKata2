@@ -60,6 +60,28 @@ class FizzBuzzTest {
         Assert.assertTrue(convert(31) == "Fizz")
     }
 
+    @Test
+    fun `Check acceptance criteria with passing multiple test`(){
+        Assert.assertEquals("1", convert(1))
+        Assert.assertEquals("2", convert(2))
+        Assert.assertEquals("Fizz", convert(3))
+        Assert.assertEquals("4", convert(4))
+        Assert.assertEquals("Buzz", convert(5))
+        Assert.assertEquals("Fizz", convert(6))
+        Assert.assertEquals("7", convert(7))
+        Assert.assertEquals("8", convert(8))
+        Assert.assertEquals("Fizz", convert(9))
+        Assert.assertEquals("Buzz", convert(10))
+        Assert.assertEquals("11", convert(11))
+        Assert.assertEquals("Fizz", convert(12))
+        Assert.assertEquals("Fizz", convert(13))
+        Assert.assertEquals("14", convert(14))
+        Assert.assertEquals("FizzBuzz", convert(15))
+        Assert.assertEquals("16", convert(16))
+        Assert.assertEquals("Buzz", convert(100))
+
+    }
+
     private fun convert(convertToFizzBuzz: Int): String {
 
         return when{
